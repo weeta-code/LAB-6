@@ -6,5 +6,8 @@ count = integers
 
 for number in range(integers, 0, -1):
     for numbers in range(1, number+1):
-        print(numbers, end=' ')
+        if number == numbers:
+            print(numbers, end='')
+        else:
+            print(numbers, end=' ')
     print()
